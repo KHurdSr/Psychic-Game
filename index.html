@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Psychic Game</title>
+  <link rel="stylesheet" type="text/css"
+    href="assets/css/style.css">
+    
+  
+</head>
+
+<body>
+<header>
+    <h1>The Psychic Game</h1>
+    <h2>Guess what letter I'm thinking of</h2>
+    <h3>Wins:</h3>
+    <h4>Losses:</h4>
+    <h5>Guesses Left:</h5>
+    <h6>Your Guesses So Far:</h6>
+</header>
+
+  <div id="game">
+
+    <div>
+        <p id="directions-text"></p>
+        <p id="userchoice-text"></p>
+        <p id="computerchoice-text"></p>
+        <p id="wins-text"></p>
+        <p id="losses-text"></p>
+        <p id="guesses-text"></p>
+        <p id="guessedLetters-text"></p>
+        <p id="letterToGuess-text"></p>
+      </div>
+    
+      <script type="text/javascript">
+        var wins = 0;
+        var losses = 0;
+        var guesses = 9;
+        var guessesLeft = 9;
+        var guessedLetters = [];
+        var letterToGuess = null;
+    
+        
+        var directionsText = document.getElementById("directions-text");
+        var userChoiceText = document.getElementById("userchoice-text");
+        var computerChoiceText = document.getElementById("computerchoice-text");
+        var winsText = document.getElementById("wins-text");
+        var lossesText = document.getElementById("losses-text");
+        var guessesText = document.getElementById("guesses-text");
+        var guessedLettersText = document.getElementById("guessedLetters-text");
+        var letterToGuessText = document.getElementById("letterToGuess-text");
+    
+        document.onkeyup = function(event) {
+    
+          var userGuess = event.key;
+    
+          var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    
+          }
+        };
+      </script>
+    
+    </body>
+    
+    </html>
+
+  
